@@ -1,0 +1,87 @@
+html {
+    margin: 0;
+    padding: 0;   
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right,#EBA6A9, #631A86);
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.main-card {
+width: 500px;
+height: 30%;
+max-width: 90%;
+border: 1px solid #e2b099;
+box-sizing: border-box;
+/* margin: 200px auto; */
+background-color:#071013;
+padding: 20px;
+border-radius: 20px;
+color: white;
+box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.6);
+animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+h1 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 1.7em;;
+}
+h2 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+}
+.main-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: auto;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.main-pic img {
+     /* object-fit: cover; */
+     transform: scale(1.3);
+}
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+}
+.skills {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.skills div img{
+    width: 50px;
+    height: 50px;
+    filter: brightness(70%);
+    transition: ease 0.2s;
+}
+.skills div img:hover {
+    filter: brightness(1.1);
+    transform: scale(1.3) rotate(8deg);
+}
+footer {
+  text-align: center;
+  color: #ddd;
+  margin-top: 20px;
+  font-size: 0.6em;
+}
